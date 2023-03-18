@@ -1,0 +1,19 @@
+body {
+    background-color: black;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    color: white;
+}
+
+nav {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 40px;
+    max-width: 1200px;
+}

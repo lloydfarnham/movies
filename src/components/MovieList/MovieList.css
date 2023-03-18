@@ -1,3 +1,40 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .grid {
     display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    width: calc(100% - 40px);
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
 }
+
+.title-search {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.search {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .search input[type="search"] {
+    padding-left: 30px; 
+    height: 25px;
+  }
+  
+  .search i.fa-magnifying-glass {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+  }
+  
