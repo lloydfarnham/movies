@@ -21,6 +21,15 @@
     align-items: center;
 }
 
+.dropdown {
+    height: 25px;
+    width: 20vw;
+    max-width:200px;
+    min-width: 160px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
 .search {
     position: relative;
     display: inline-block;
@@ -29,6 +38,9 @@
   .search input[type="search"] {
     padding-left: 30px; 
     height: 25px;
+    width: 20vw;
+    max-width:200px;
+    min-width: 160px;
   }
   
   .search i.fa-magnifying-glass {

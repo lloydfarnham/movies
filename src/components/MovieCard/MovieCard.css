@@ -2,14 +2,33 @@ body {
     background-color: #ffffff;
 }
 
+.no-underline {
+    text-decoration: none;
+}
+
 .movie-card {
     width: 100%;
-    height: auto;
+    height: 100%;
     box-sizing: border-box; 
+    transition: transform 0.2s ease-in-out;
+}
+
+.movie-card:hover {
+    transform: scale(1.02);
+    z-index: 1;
+}
+
+.movie-card:active {
+    transform: scale(0.98);
+    z-index: 1;
+}
+
+.movie-card:active img {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
 }
 
 .movie-card:hover img {
-    box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
   }
   
 
@@ -18,7 +37,8 @@ img {
     height: auto;
     display: block; 
     border-radius: 10px; 
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);   
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.2s ease-in-out;  
 }
 
 h1 {
@@ -51,8 +71,43 @@ h4 {
     font-size: 10px;
 }
 
-.movie-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+
+.star-rating {
+    display: inline-block;
+    font-size: 0;
+    position: relative;
+    color: #ddd;
+  }
+  
+  .star-rating .star {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+    background-image: url('https://cdn.pixabay.com/photo/2017/02/15/10/57/star-2062767_960_720.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  .star-rating .star:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #fff;
+  }
+  
+  .star-rating .star:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-image: url('https://cdn.pixabay.com/photo/2017/02/15/10/57/star-2062767_960_720.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
