@@ -4,7 +4,7 @@ import './LandingPage.css';
 
 function LandingPage () {
     return (
-        <div>
+        <div class="container">
             <MovieList Url="popular" Title="Popular Movies" />
             <MovieList Url="top_rated" Title="Top Rated" />
             {/* <MovieList Url="latest" Title="Latest" /> */}

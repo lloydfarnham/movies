@@ -8,12 +8,10 @@
     max-width: 1400px;
     margin: 0 auto;
     overflow-x: hidden;
-    margin-right: 20px;
   }
   
   h1 {
-    margin: 0;
-    margin-left: 20px;
+    margin: 20px 0px 0px 5px;
   }
   
   .grid {
@@ -24,7 +22,7 @@
     max-width: 100%;
     overflow-x: auto;
     overscroll-behavior-inline: contain;
-    padding: 20px;
+    padding-top: 20px;
   }
   
   .grid::-webkit-scrollbar {
@@ -78,3 +76,4 @@
     transform: translateY(-50%);
   }
   
+
