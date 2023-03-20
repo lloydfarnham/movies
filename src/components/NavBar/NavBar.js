@@ -4,14 +4,8 @@ import './NavBar.css'
 function NavBar () {
     return (
         <nav>
-            <ul>
-                <li>
-                    <Link to="/">Home</Link>
-                </li>
-                <li>
-                    <Link to="/about">About</Link>
-                </li>
-            </ul>
+            <Link to="/" className='no-underline logo'><i class="fa-solid fa-film"></i></Link> 
+            <h2><Link to="/about" className='no-underline'>About</Link></h2>      
         </nav>
     );
 }
