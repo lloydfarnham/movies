@@ -32,26 +32,16 @@ function MovieList(props) {
 
     return (
         <div class="container">
-            {/* <div class="title-search">
-                <select class="dropdown" id="view" onChange={handleOptionChange}> 
-                    <option value="popular">Popular Movies</option>
-                    <option value="topRated">Top Rated Movies</option>
-                </select>
-                <div class="search">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="search" onChange={search}></input>
-                </div>
-            </div> */}
-
             <h1>{props.Title}</h1>
 
             <div class="grid-container">            
                 <div class="grid snaps-inline">
                     {movies.map(movie => (
-                    <MovieCard key={movie.id} movie={movie} getGenreNames={getGenreNames}/>
+                    <MovieCard key={movie.id} movie={movie} getGenreNames={getGenreNames} {...movie}/>
                     ))}
                 </div>
             </div>
+            <div className='overlay'></div>
         </div>
     );
 }
