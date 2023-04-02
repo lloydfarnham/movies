@@ -31,7 +31,11 @@ body {
 .movie-card:hover img {
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
   }
-  
+
+  .backdrop {
+    position: relative;
+    display: inline-block;
+  }
 
 img {
     width: 100%;
@@ -40,6 +44,20 @@ img {
     border-radius: 10px; 
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
     transition: transform 0.2s ease-in-out;  
+}
+
+.rating {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    color: #fff;
+    padding: 7px 10px;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 1); 
+}
+
+.year {
+    font-size: 10px;
 }
 
 h1 {

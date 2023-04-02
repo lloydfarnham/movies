@@ -36,6 +36,7 @@ function MovieList(props) {
 
             <div class="grid-container">            
                 <div class="grid snaps-inline">
+                    {/* <div className='spacer'></div> */}
                     {movies.map(movie => (
                     <MovieCard key={movie.id} movie={movie} getGenreNames={getGenreNames} {...movie}/>
                     ))}

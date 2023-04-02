@@ -1,6 +1,8 @@
 .no-underline {
     text-decoration: none;
     color: white;
+    padding: 0;
+    margin: 0;
 }
 
 nav {
