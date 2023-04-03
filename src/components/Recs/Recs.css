@@ -2,7 +2,6 @@
     max-width: 1400px;
     margin: 0 auto;
     overflow-x: hidden;
-    position: relative;
   }
   
   .grid-container {
@@ -24,9 +23,8 @@
     overflow-x: auto;
     overscroll-behavior-inline: contain;
     padding-top: 20px;
-    padding-left: 20px;
   }
-
+  
   .grid::-webkit-scrollbar {
     display: none;
   }
@@ -48,6 +46,16 @@
     margin-bottom: 40px;
     align-items: center;
   }
+  
+  .hideRight {
+    min-width: 40px;
+    height: 100%;
+    background-color: white;
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
   
 
 

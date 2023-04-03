@@ -21,6 +21,7 @@ function LandingPage({ searchQuery }) {
       ) : (
         <Search query={query} Title="Search results" />
       )}
+      <div className='hideRight'></div>
     </div>
   );
 }

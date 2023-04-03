@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import MovieCard from '../MovieCard/MovieCard';
-import './MovieList.css';
+import './Recs.css';
 
-function MovieList(props) {
-    const apiUrl = `https://api.themoviedb.org/3/movie/${props.Url}?api_key=dc0fb7b28045cd04916b73e857aec4f9&language=en-US`
+function Recs(props) {
+    const apiUrl = `https://api.themoviedb.org/3/movie/${props.id}/recommendations?api_key=dc0fb7b28045cd04916b73e857aec4f9&language=en-US&page=1`
     const [movies, setMovies] = useState([]);
     const [genres, setGenres] = useState([]);
 
@@ -29,22 +29,24 @@ function MovieList(props) {
         });
     }
 
+    movies.sort((a, b) => b.vote_count - a.vote_count);
 
     return (
         <div class="container">
-            <h1>{props.Title}</h1>
+            <h1>Similar titles</h1>
 
-            <div class="grid-container">         
+            <div class="grid-container">            
                 <div class="grid snaps-inline">
                     {movies.map(movie => (
                     <MovieCard key={movie.id} movie={movie} getGenreNames={getGenreNames} {...movie}/>
                     ))}
                 </div>
             </div>
+            <div className='hideRight'></div>
         </div>
     );
 }
 
-export default MovieList;
+export default Recs;
 
 

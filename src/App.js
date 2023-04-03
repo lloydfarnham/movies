@@ -16,16 +16,20 @@ function App() {
 
   return (
     <div className="app">
-      <NavBar onSearchInputChange={handleSearch} />
+      <div className='pageContainer'>
+      <div>
+        <NavBar onSearchInputChange={handleSearch} />
 
-      <Routes>
-        <Route path="/" element={<LandingPage searchQuery={searchQuery} />} />
-        <Route path="/:id" element={<MovieDetails />} />
-        <Route path="/about" element={<About />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
-      </Routes>
+        <Routes>
+          <Route path="/" element={<LandingPage searchQuery={searchQuery} />} />
+          <Route path="/:id" element={<MovieDetails />} />
+          <Route path="/about" element={<About />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      </div>
 
       <Footer />
+      </div>
     </div>
   );
 }

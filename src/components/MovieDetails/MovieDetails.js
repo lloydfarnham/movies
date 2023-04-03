@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
+import Recs from '../Recs/Recs';
 import "./MovieDetails.css";
 
 export default function MovieDetails() {
@@ -28,10 +29,10 @@ export default function MovieDetails() {
 
   useEffect(() => {
     fetchMovies();
-  }, []);
+  }, [id]);
 
   return (
-    <div>
+    <div key={id}>
       <div className="image" style={{ backgroundImage: `url(https://image.tmdb.org/t/p/w500${movieDetails?.backdrop_path})` }}>
         <div className="gradient">
           <div className="poster-container">
@@ -51,7 +52,7 @@ export default function MovieDetails() {
           </div>
         </div>
       </div>
-      <Reccomendations />
+      <Recs id={id}/>
     </div>
   );
 }

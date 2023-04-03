@@ -21,7 +21,7 @@ function MovieCard(props) {
               alt="No Image Available"
             />
           )}
-          <h4 className="rating">{movie.vote_average.toFixed(1)}/10</h4>
+          <h4 className="rating">{movie.vote_average.toFixed(1)}<span className="ten">/10</span></h4>
         </div>
         <h4>{getGenreNames(movie.genre_ids).join(", ")}</h4>
         <h2>{movie.title}</h2>

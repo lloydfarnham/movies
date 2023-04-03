@@ -2,7 +2,7 @@
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: right calc((50vw - 170px) - 210px) top;
-    height: 500px;
+    min-height: 500px;
     width: 100%;
     display: flex;
     justify-content: center;
