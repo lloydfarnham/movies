@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './MovieCard.css';
+import React from "react";
+import { Link } from "react-router-dom";
+import "./MovieCard.css";
 
 function MovieCard(props) {
   const { movie, getGenreNames } = props;
@@ -21,7 +21,10 @@ function MovieCard(props) {
               alt="No Image Available"
             />
           )}
-          <h4 className="rating">{movie.vote_average.toFixed(1)}<span className="ten">/10</span></h4>
+          <h4 className="rating">
+            {movie.vote_average.toFixed(1)}
+            <span className="ten">/10</span>
+          </h4>
         </div>
         <h4>{getGenreNames(movie.genre_ids).join(", ")}</h4>
         <h2>{movie.title}</h2>

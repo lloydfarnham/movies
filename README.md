@@ -18,3 +18,7 @@ Features to add:
 -footer 
 
 -add advanced search page, filter based on year, rating, genre etc.
+
+-placeholder for posters
+
+-scroll to top after movie details page loads

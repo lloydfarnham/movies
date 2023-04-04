@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import MovieList from '../MovieList/MovieList';
-import Search from '../Search/Search';
-import './LandingPage.css';
+import React, { useState, useEffect } from "react";
+import MovieList from "../MovieList/MovieList";
+import Search from "../Search/Search";
+import "./LandingPage.css";
 
 function LandingPage({ searchQuery }) {
-  const [query, setQuery] = useState('');
+  const [query, setQuery] = useState("");
 
   useEffect(() => {
     setQuery(searchQuery);
@@ -12,7 +12,7 @@ function LandingPage({ searchQuery }) {
 
   return (
     <div className="container">
-      {query === '' ? (
+      {query === "" ? (
         <>
           <MovieList Url="popular" Title="Popular movies" />
           <MovieList Url="top_rated" Title="Top rated" />
@@ -21,7 +21,7 @@ function LandingPage({ searchQuery }) {
       ) : (
         <Search query={query} Title="Search results" />
       )}
-      <div className='hideRight'></div>
+      <div className="hide-right"></div>
     </div>
   );
 }

@@ -1,11 +1,11 @@
 .app {
-    max-width: 1400px;
-    margin: auto;
+  max-width: 1400px;
+  margin: auto;
 }
 
 .pageContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 51vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 51vw;
 }

@@ -1,98 +1,101 @@
 body {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 .no-underline {
-    text-decoration: none;
+  text-decoration: none;
+  -webkit-user-drag: none;
+  user-drag: none;
 }
 
 .movie-card {
-    width: 100%;
-    max-width: 300px;
-    height: 100%;
-    box-sizing: border-box; 
-    transform: scale(0.98);
-    transition: transform 0.2s ease-in-out;
+  width: 100%;
+  max-width: 300px;
+  height: 100%;
+  box-sizing: border-box;
+  transform: scale(0.98);
+  transition: transform 0.2s ease-in-out;
 }
 
 .movie-card:hover {
-    transform: scale(1);
-    z-index: 1;
+  transform: scale(1);
+  z-index: 1;
 }
 
 .movie-card:active {
-    transform: scale(0.96);
-    z-index: 1;
+  transform: scale(0.96);
+  z-index: 1;
 }
 
 .movie-card:active img {
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
 }
 
 .movie-card:hover img {
-    box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
-  }
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+}
 
-  .backdrop {
-    position: relative;
-    display: inline-block;
-  }
+.backdrop {
+  position: relative;
+  display: inline-block;
+}
 
 img {
-    width: 100%;
-    height: auto;
-    display: block; 
-    border-radius: 10px; 
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
-    transition: transform 0.2s ease-in-out;  
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out;
+  -webkit-user-drag: none;
+  user-drag: none;
 }
 
 .rating {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin: 0;
-    color: #fff;
-    padding: 7px 10px;
-    text-shadow: 0 0 3px rgba(0, 0, 0, 1); 
-    font-size: 15px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  color: #fff;
+  padding: 7px 10px;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 1);
+  font-size: 15px;
 }
 
 .year {
-    font-size: 10px;
+  font-size: 10px;
 }
 
 h1 {
-    font-size: 21px;
+  font-size: 21px;
 }
 
 h2 {
-    color: black;
-    margin: 0;
-    font-size: 15px;
+  color: black;
+  margin: 0;
+  font-size: 15px;
 }
 
 h3 {
-    color: rgba(0, 0, 0, 0.56);
-    margin: 0;
-    padding: 5px 0px;
-    font-size: 12px;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    height: 36px;
+  color: rgba(0, 0, 0, 0.56);
+  margin: 0;
+  padding: 5px 0px;
+  font-size: 12px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 36px;
 }
 
 h4 {
-    color: rgba(0, 0, 0, 0.56);
-    margin: 0;
-    padding: 5px 0px;
-    font-size: 10px;
+  color: rgba(0, 0, 0, 0.56);
+  margin: 0;
+  padding: 5px 0px;
+  font-size: 10px;
 }
 
 .ten {
-    font-size: 8px;
+  font-size: 8px;
 }
-  
