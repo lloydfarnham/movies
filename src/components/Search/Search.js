@@ -7,6 +7,7 @@ function Search({ query, Title }) {
   const [movies, setMovies] = useState([]);
   const [genres, setGenres] = useState([]);
 
+  // Great use of use effect here
   useEffect(() => {
     const apiUrl = `https://api.themoviedb.org/3/search/movie?api_key=dc0fb7b28045cd04916b73e857aec4f9&language=en-US&query=${query}`;
 

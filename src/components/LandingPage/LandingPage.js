@@ -12,6 +12,7 @@ function LandingPage({ searchQuery }) {
 
   return (
     <div className="container">
+      {/* this would be better to be on a separate page, it would probably help with the user pressing the back button on the url */}
       {query === "" ? (
         <>
           <MovieList Url="popular" Title="Popular movies" />

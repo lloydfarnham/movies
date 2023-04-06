@@ -10,6 +10,7 @@ function MovieCard(props) {
     <Link to={`/${props.id}`} className="no-underline">
       <div className="movie-card">
         <div className="backdrop">
+          {/* Great use of a fallback here */}
           {movie.backdrop_path ? (
             <img
               src={`https://image.tmdb.org/t/p/w500${movie.backdrop_path}`}
@@ -26,6 +27,7 @@ function MovieCard(props) {
             <span className="ten">/10</span>
           </h4>
         </div>
+        {/* Great use of a utility function here */}
         <h4>{getGenreNames(movie.genre_ids).join(", ")}</h4>
         <h2>{movie.title}</h2>
         <h4>({releaseYear})</h4>

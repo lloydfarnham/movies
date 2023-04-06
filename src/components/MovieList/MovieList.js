@@ -25,6 +25,7 @@ function MovieList(props) {
       .catch((error) => console.log(error));
   }, []);
 
+  // Great helper function for the genres
   function getGenreNames(genreIds) {
     return genreIds.map((id) => {
       const genre = genres.find((g) => g.id === id);

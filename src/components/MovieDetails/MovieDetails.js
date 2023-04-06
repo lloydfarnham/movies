@@ -14,6 +14,7 @@ export default function MovieDetails(props) {
     month: "long",
     year: "numeric",
   };
+  // Great formatting here
   const formattedReleaseDate = releaseDate.toLocaleDateString("en-UK", options);
   const formattedBudget = movieDetails?.budget
     ? `$${Number(movieDetails?.budget).toLocaleString()}`

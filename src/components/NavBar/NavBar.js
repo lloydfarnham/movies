@@ -34,6 +34,7 @@ function NavBar({ onSearchInputChange, searchQuery }) {
           value={query}
           onChange={handleSearchInputChange}
         />
+        {/* Great use of conditional rendering here */}
         {query && (
           <button className="clear-search" onClick={handleClearSearch}>
             X
